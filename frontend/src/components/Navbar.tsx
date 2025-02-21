@@ -34,9 +34,9 @@ const Navbar = () => {
 				</ul>
 
 				{/* Log In Button (Hidden on small screens) */}
-				<div className="bg-[#A8174E] hidden sm:inline px-6 py-1 rounded-full bg-primary text-md sm:text-base font-bold cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110 duration-300">
+				<div className="bg-[#A8174E] hidden sm:inline px-6 py-1 rounded-full bg-primary text-md sm:text-base cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110 duration-300">
 					<AnchorLink
-						className="text-white decoration-none"
+						className="text-white font-bold decoration-none antialiased"
 						offset={50}
 					>
 						Log In
