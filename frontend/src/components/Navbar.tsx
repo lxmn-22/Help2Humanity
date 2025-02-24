@@ -1,12 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Navbar = () => {
+	const navigate = useNavigate();
 	return (
 		<div className="flex sticky items-center justify-evenly top-2 mx-4 sm:mx-16 lg:mx-24 xl:mx-18 my-6 sm:my-2 px-4 sm:px-6 md:px-8 lg:px-10">
 			{/* Logo */}
 			<img
+				onClick={() => navigate("/")}
 				className="w-32 h-32 cursor-pointer hover:animate-bounce transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110 duration-300"
 				src={assets.logo}
 				alt="Logo"
@@ -19,15 +21,15 @@ const Navbar = () => {
 						<li className="py-1">Home</li>
 						<hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
 					</NavLink>
-					<NavLink to="/about_us">
+					<NavLink to="/about-us">
 						<li className="py-1">About Us</li>
 						<hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
 					</NavLink>
-					<NavLink to="/find_blood">
+					<NavLink to="/find-blood">
 						<li className="py-1">Find Blood</li>
 						<hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
 					</NavLink>
-					<NavLink to="/register_now">
+					<NavLink to="/register-now">
 						<li className="py-1">Register Now</li>
 						<hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
 					</NavLink>
