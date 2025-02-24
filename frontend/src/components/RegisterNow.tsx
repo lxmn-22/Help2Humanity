@@ -2,7 +2,7 @@ import React from "react";
 
 const RegisterNow = () => {
 	return (
-		<div className="bg-white flex flex-col items-center justify-start p-6 sm:p-8 md:p-10 lg:p-12 mx-4 sm:mx-16 lg:mx-24 xl:mx-32 my-6 sm:my-4 shadow-lg">
+		<div className="bg-white flex flex-col items-center justify-start p-6 sm:p-8 md:p-10 lg:p-12 mx-4 sm:mx-16 lg:mx-24 xl:mx-32 my-6 sm:my-4 shadow-lg xl:mb-28">
 			<div className="bg-[#A8174E] w-full h-24 flex items-center justify-start px-6 mb-6">
 				<h1 className="text-xl sm:text-2xl text-white font-bold">
 					Register As Donor
